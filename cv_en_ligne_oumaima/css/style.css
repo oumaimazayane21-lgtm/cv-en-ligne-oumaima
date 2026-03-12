@@ -1,0 +1,408 @@
+/* GENERAL */
+
+body{
+font-family: 'Segoe UI', sans-serif;
+background:#f8f9fa;
+scroll-behavior:smooth;
+}
+
+section{
+padding:70px 0;
+}
+
+/* TITLES */
+
+h1{
+font-weight:700;
+font-size:45px;
+}
+
+h2{
+font-weight:600;
+margin-bottom:30px;
+color:#333;
+}
+
+/* NAVBAR */
+
+.navbar{
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand{
+font-weight:bold;
+font-size:20px;
+}
+
+/* PROFILE IMAGE */
+
+img.rounded-circle{
+border:5px solid white;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* BUTTON */
+
+.btn-primary{
+padding:10px 25px;
+border-radius:30px;
+font-weight:500;
+}
+
+/* COMPETENCES */
+
+#skills .card{
+border:none;
+border-radius:10px;
+padding:15px;
+transition:0.3s;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+#skills .card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* PROJETS */
+
+#projects .card{
+border:none;
+border-radius:12px;
+padding:10px;
+transition:0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+#projects .card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* CONTACT */
+
+#contact .card{
+border:none;
+border-radius:12px;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+#contact a{
+text-decoration:none;
+color:#0d6efd;
+}
+
+#contact a:hover{
+text-decoration:underline;
+}
+
+/* FOOTER */
+
+footer{
+background:#212529;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+h1{
+font-size:32px;
+}
+
+section{
+padding:50px 20px;
+}
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  color: #1f2937;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #0f172a, #1d4ed8) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+  padding: 14px 0;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #e5e7eb !important;
+  font-weight: 500;
+  margin-left: 14px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+/* Hero */
+.hero-section,
+section.container.text-center.mt-5.pt-4,
+section.container.text-center.mt-5 {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.lead,
+p {
+  font-size: 1.08rem;
+  color: #4b5563;
+}
+
+/* Image profil */
+.rounded-circle {
+  width: 220px !important;
+  height: 220px !important;
+  object-fit: cover;
+  border: 6px solid #ffffff;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.18);
+  transition: 0.35s ease;
+}
+
+.rounded-circle:hover {
+  transform: scale(1.03);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.35);
+}
+
+/* Cards general */
+.card {
+  border: none !important;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+}
+
+.card-body {
+  padding: 25px;
+}
+
+/* About */
+#about .card {
+  padding: 18px;
+  border-left: 5px solid #2563eb !important;
+}
+
+/* Skills */
+#skills .card {
+  text-align: center;
+  font-weight: 600;
+  color: #1e3a8a;
+  padding: 22px 15px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+#skills .row {
+  row-gap: 22px;
+}
+
+/* Projects */
+#projects .card-title,
+#projects h5 {
+  color: #0f172a;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+#projects .card-text,
+#projects p {
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+/* Contact */
+#contact .card {
+  padding: 10px;
+  background: linear-gradient(180deg, #ffffff, #f9fbff);
+}
+
+#contact p {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+
+#contact i {
+  color: #2563eb;
+  margin-right: 10px;
+}
+
+#contact a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #0f172a, #1d4ed8);
+  color: white;
+  text-align: center;
+  padding: 22px 10px;
+  margin-top: 40px;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Spacing helpers */
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .rounded-circle {
+    width: 190px !important;
+    height: 190px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .lead,
+  p {
+    font-size: 1rem;
+  }
+
+  .rounded-circle{
+width:200px;
+height:200px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid white;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+display:block;
+margin:auto;
+}
+
+  .navbar-nav {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+}
+#skills .card{
+margin-bottom:20px;
+}
+.card:hover{
+transform:translateY(-8px);
+transition:0.3s;
+}
