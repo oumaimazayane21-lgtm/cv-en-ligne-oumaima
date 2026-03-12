@@ -482,3 +482,13 @@ background:#f8f9fa;
 padding:40px;
 border-radius:12px;
 }
+#experience .col-md-6{
+padding:20px;
+}
+#experience h2{
+font-weight:700;
+margin-bottom:30px;
+}
+#experience ul li{
+font-size:15px;
+}
